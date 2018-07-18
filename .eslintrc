@@ -1,0 +1,15 @@
+{
+	"parser": "babel-eslint",
+	"extends": [],
+	"plugins": [],
+	"parserOptions": {
+		"sourceType": "module"
+	},
+	"rules": {
+		"semi": [ 0, "never" ],
+		"no-console": 0
+	},
+	"globals": {
+		"fetch": true
+	}
+}

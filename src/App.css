@@ -1,0 +1,14 @@
+ul {
+	list-style-type: none;
+}
+li {
+	display: inline-block;
+}
+.genres > li {
+	margin-right: 20px;
+}
+.albums > li {
+	width: 32%;
+	max-width: 33%;
+	border: 1px solid black;
+}

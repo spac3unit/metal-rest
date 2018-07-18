@@ -1,0 +1,31 @@
+{
+	"host": "0.0.0.0",
+	"port": 3030,
+	"public": "../public/",
+	"paginate": {
+		"default": 30,
+		"max": 50
+	},
+	"mongodb": "mongodb://localhost:27017/RESTmetal",
+	"authentication": {
+		"secret": "790bdb55a8eaa2c35e0365d4ef4eb8c391bf38749ded4ea2dd79a2da314d2dd6d72e08675f79fabcbc94068bc8edb50a562c106821f481a1f327bb7a056d31d7e85b7a0fda843614737e7510dd67d607633bf0ff689f452890975f60e7aac9f0be1d2f08864dd1c0494178ccced3045bb05c4e20039359ebb9bb34c437725f43d740a754ef9489f4338db9e161314982a1470643c86b9fdde0873565a6e88447bfee1fe5558a1a79a5214b6fbcbda79bf27967f384a7130600a705b8e8c6a5eaace5640b707e0f8e0e992414e735dc0954987fb60bacf579a2d9bcaf1636dd558bf388f6456644880cbe78713500b2c68072e5777fe686335a51e8329858ef2a",
+		"strategies": [ "jwt", "local" ],
+		"path": "/authentication",
+		"service": "users",
+		"jwt": {
+			"header": {
+				"typ": "access"
+			},
+			"audience": "https://yourdomain.com",
+			"subject": "anonymous",
+			"issuer": "feathers",
+			"algorithm": "HS256",
+			"expiresIn": "1d"
+		},
+		"local": {
+			"entity": "user",
+			"usernameField": "email",
+			"passwordField": "password"
+		}
+	}
+}

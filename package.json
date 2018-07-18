@@ -1,0 +1,26 @@
+{
+	"name": "mobx-metal-rest-v1",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"start": "HOST=`0.0.0.0` cross-env BROWSER=none react-app-rewired start",
+		"build": "react-app-rewired build",
+		"test": "react-app-rewired test --env=jsdom",
+		"eject": "react-scripts eject"
+	},
+	"dependencies": {
+		"mobx": "^5.0.3",
+		"mobx-react": "^5.2.3",
+		"react": "^16.4.1",
+		"react-dom": "^16.4.1",
+		"react-scripts": "1.1.4",
+		"simple-react-modal": "^0.5.1",
+		"superagent": "^3.8.3"
+	},
+	"devDependencies": {
+		"babel-plugin-root-import": "^6.1.0",
+		"mobx-react-devtools": "^5.0.1",
+		"react-app-rewire-mobx": "^1.0.8",
+		"react-app-rewired": "^1.5.2"
+	}
+}
