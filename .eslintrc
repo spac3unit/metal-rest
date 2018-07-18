@@ -1,15 +1,16 @@
 {
-	"parser": "babel-eslint",
-	"extends": [],
-	"plugins": [],
-	"parserOptions": {
-		"sourceType": "module"
-	},
-	"rules": {
-		"semi": [ 0, "never" ],
-		"no-console": 0
-	},
-	"globals": {
-		"fetch": true
-	}
+  "parser": "babel-eslint",
+  "extends": [],
+  "plugins": [],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": [ 0, "never" ],
+    "no-console": 0,
+    "no-unused-vars": 0
+  },
+  "globals": {
+    "fetch": true
+  }
 }

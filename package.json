@@ -11,8 +11,10 @@
 	"dependencies": {
 		"mobx": "^5.0.3",
 		"mobx-react": "^5.2.3",
+		"prop-types": "^15.6.2",
 		"react": "^16.4.1",
 		"react-dom": "^16.4.1",
+		"react-router-dom": "^4.3.1",
 		"react-scripts": "1.1.4",
 		"simple-react-modal": "^0.5.1",
 		"superagent": "^3.8.3"

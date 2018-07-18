@@ -2,6 +2,8 @@ import { observable, action } from 'mobx'
 
 class AuthStore {
   @observable inProgress = false
+  @observable errors = undefined
+  @observable
   values = {
     username: '',
     email: '',

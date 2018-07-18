@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { inject, observer } from 'mobx-react'
 import { action, observable } from 'mobx'
+import { Match, Link } from 'react-router-dom'
 
 @inject('store')
 @observer
@@ -15,7 +16,15 @@ class GenresList extends Component {
       <div>
         <h3>Genres List</h3>
         <ul className='genres'>
-          {!isEmpty ? genres.map(genre => <li key={genre}>{genre}</li>) : <h3>Genres List is loading...</h3>}
+          {!isEmpty ? (
+            genres.map(genre => (
+              <li key={genre}>
+                <Link to={`/genre/${genre}`}>{genre}</Link>
+              </li>
+            ))
+          ) : (
+            <h3>Genres List is loading...</h3>
+          )}
         </ul>
       </div>
     )

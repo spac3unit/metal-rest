@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { inject, observer } from 'mobx-react'
-import { action, observable } from 'mobx'
+import { Match, Link } from 'react-router-dom'
 
 @inject('store')
 @observer
 class AlbumsList extends Component {
-  componentWillMount() {
-    this.props.store.AlbumsStore.fetchAlbums()
+  componentDidMount() {
+    const { genreName = '' } = this.props.match.params
+    this.props.store.AlbumsStore.fetchAlbums(genreName)
   }
 
   render() {
@@ -19,9 +20,11 @@ class AlbumsList extends Component {
           {!isEmpty ? (
             albums.map(album => (
               <li key={album._id}>
-                <p>{album.artist}</p>
-                <p>{album.album}</p>
-                <p>{album.genre}</p>
+                <Link to={`/album/${album._id}`}>
+                  <p>{album.artist}</p>
+                  <p>{album.album}</p>
+                  <p>{album.genre}</p>
+                </Link>
               </li>
             ))
           ) : (

@@ -1,14 +1,24 @@
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 li {
-	display: inline-block;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+a.active {
+  text-decoration: underline;
+}
+.topbar {
+  margin-bottom: 40px;
 }
 .genres > li {
-	margin-right: 20px;
+  margin-right: 20px;
 }
 .albums > li {
-	width: 32%;
-	max-width: 33%;
-	border: 1px solid black;
+  width: 32%;
+  max-width: 33%;
+  border: 1px solid black;
 }
