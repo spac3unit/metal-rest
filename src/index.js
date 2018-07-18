@@ -10,16 +10,16 @@ import SuperStore from './stores/SuperStore'
 import AlbumsStore from './stores/AlbumsStore'
 import GenresStore from './stores/GenresStore'
 const stores = {
-	SuperStore,
-	AlbumsStore,
-	GenresStore,
+  SuperStore,
+  AlbumsStore,
+  GenresStore,
 }
 
 window._____APP_STATE_____ = stores
 
 const Root = () => (
-	<Provider store={stores}>
-		<App />
-	</Provider>
+  <Provider store={stores}>
+    <App />
+  </Provider>
 )
 ReactDOM.render(<Root />, document.getElementById('root'))
