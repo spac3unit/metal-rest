@@ -25,13 +25,10 @@ class TopBar extends Component {
 class TopNav extends Component {
   render() {
     return (
-      <nav>
-        <ActiveLink activeOnlyWhenExact={true} to='/' label='Home'>
-          Home
-        </ActiveLink>
-        <ActiveLink to='/lastfm' label='Lastfm'>
-          Lastfm
-        </ActiveLink>
+      <nav className='topnav'>
+        <ActiveLink activeOnlyWhenExact={true} to='/' label='Home' />
+        <ActiveLink to='/lastfm' label='Lastfm' />
+
         <BackButton />
       </nav>
     )

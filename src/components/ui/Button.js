@@ -12,9 +12,13 @@ class BackButton extends Component {
 
   render() {
     return (
-      <button className='button icon-left' onClick={this.context.router.history.goBack}>
+      <a
+        onClick={this.context.router.history.goBack}
+        className='f6 link dim ph3 pv2 dib white bg-black'
+        href='#'
+      >
         Back
-      </button>
+      </a>
     )
   }
 }

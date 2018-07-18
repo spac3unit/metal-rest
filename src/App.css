@@ -1,3 +1,23 @@
+:root {
+  --darkText: #001833;
+  --gray: #687b8e;
+  --lightGray: #f6f8fa;
+  --borderGray: #d1d6db;
+  --darkGray: #364049;
+  --lightBlue: #ccddff;
+  --darkBlue: #049;
+  --darkYellow: #f6e27f;
+}
+
+/* Common styles */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  color: #001c63;
+  font-family: 'Roboto mono';
+}
 ul {
   list-style-type: none;
 }
@@ -6,17 +26,39 @@ li {
 }
 a {
   text-decoration: none;
-  padding: 10px;
+  color: #001c63;
+  font-family: 'Roboto mono';
 }
 a.active {
   text-decoration: underline;
 }
+
+/* Topbar  */
 .topbar {
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 24px;
+  background-color: var(--darkYellow);
 }
-.genres > li {
-  margin-right: 20px;
+.topnav {
+  display: flex;
+  align-items: center;
 }
+.topnav a {
+  margin-right: 24px;
+}
+
+/* Genres List */
+.genres {
+}
+a.genre {
+  background-color: var(--lightGray);
+  color: var(--darkText);
+  text-transform: uppercase;
+}
+
+/* Albums  */
 .albums > li {
   width: 32%;
   max-width: 33%;
